@@ -1,12 +1,32 @@
 import { data } from './data';
 
 const covid19ImpactEstimator = () => {
-    
-    const infected = data.reportedCases;
-    // get reported cases
+
+    const outputData = {
+        data:{},
+        impact:{},
+        severeImpact:{},
+        curentlyInfected:{}
+    }
+
+    impact.curentlyInfected;
+    impact.severe;
+  
+    // get currently infected cases
     (function getCurrentlyInfected(){
-        infected * 10
-    }(infected))
+       const curentlyInfected = data.reportedCases;
+       return  curentlyInfected * 10
+    }(curentlyInfected));
+
+    // get severe impact
+    (function getSevereImpact (){
+        const severe  = outputData.curentlyInfected
+        return severe * 50
+    }(severe));
+
+    //number after every 30 days
+
+    return outputData;
 };
 
 export default covid19ImpactEstimator;
